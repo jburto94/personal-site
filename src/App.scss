@@ -1,9 +1,19 @@
-@import '../src/scss/themes/theme-dark.scss';
-@import '../src/scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+
+$base-color: #0a2647;
+$secondary-color: #cd661b;
 
 html {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+
+  .App {
+    .Header {
+      height: 100vh;
+      background-color: $base-color;
+      display: flex;
+      align-items: center;
+    }
+  }
 }

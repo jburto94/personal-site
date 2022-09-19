@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Raleway:wght@300;600&display=swap');
 
 $base-color: #0a2647;
 $secondary-color: #cd661b;
@@ -7,16 +7,60 @@ html {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
 
   .App {
+    h1 {
+      font-weight: 600;
+    }
+
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
     .Header {
       height: 100vh;
       background-color: $base-color;
       display: flex;
       align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media  screen and (max-width: 767px) {
+          left: 0;
+        }
+    
+        .navbar-nav {
+          margin-left: auto;
+
+          .nav-link {
+            font-size: 1.2em;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            margin-right: 16px;
+          }
+        }
+      }
 
       .word {
         display: block;
+        font-weight: 300;
 
         span {
           color: $secondary-color;

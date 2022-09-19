@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 
-const words = ['Web Developer', 'Fullstack engineer', 'UI Developer'];
+const words = ['Web Developer', 'Software engineer', 'UI Developer'];
 const firstWord = words[0].split('')
 
 const TypingText = () => {
@@ -51,7 +51,7 @@ const TypingText = () => {
       } else {
         backspace();
       }
-    }, 100);
+    }, 80);
 
     return () => {
       clearInterval(typingInterval.current);

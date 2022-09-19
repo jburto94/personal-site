@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import About from "./components/About";
 
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,6 +9,7 @@ const App = () => {
   return (
     <div className='App'>
       <Header />
+      <About />
     </div>
   );
 };

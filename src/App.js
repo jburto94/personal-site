@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,6 +11,7 @@ const App = () => {
     <div className='App'>
       <Header />
       <About />
+      <Skills />
     </div>
   );
 };

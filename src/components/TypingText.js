@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
+import { typedWords } from '../data';
 
-const words = ['Web Developer', 'Software engineer', 'UI Developer'];
-const firstWord = words[0].split('')
+const firstWord = typedWords[0].split('')
 
 const TypingText = () => {
   const [wordIndex, setWordIndex] = useState(0);
@@ -14,21 +14,21 @@ const TypingText = () => {
     let pauseCounter = 0;
 
     const typeLetter = () => {
-      if (letterIndex.current >= words[wordIndex].length) {
+      if (letterIndex.current >= typedWords[wordIndex].length) {
         direction.current = 'backward';
 
-        pauseCounter = 6;
+        pauseCounter = 10;
         return;
       }
 
-      const segment = words[wordIndex].split('');
+      const segment = typedWords[wordIndex].split('');
       setCurrentWord(currentWord.concat(segment[letterIndex.current]));
       letterIndex.current++;
     }
 
     const backspace = () => {
       if (letterIndex.current === 0) {
-        const isLastWord = wordIndex === words.length - 1;
+        const isLastWord = wordIndex === typedWords.length - 1;
 
         setWordIndex(isLastWord ? 0 : wordIndex + 1);
         direction.current = 'forward';

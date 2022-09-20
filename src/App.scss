@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Raleway:wght@300;600&display=swap');
 
-$base-color: #0a2647;
-$secondary-color: #cd661b;
+$base-color: #6B9B8A;
+$dark: #1f1f1f;
 
 html {
 	-webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ html {
     h2 {
       font-family: 'Raleway', sans-serif;
       font-weight: 600;
-      letter-spacing: 0.05;
+      letter-spacing: 0.1em;
     }
 
     p {
@@ -52,7 +52,7 @@ html {
           .nav-link {
             font-size: 1.2em;
             font-family: 'Raleway', sans-serif;
-            font-weight: 300;
+            font-weight: 600;
             margin-right: 16px;
           }
         }
@@ -63,14 +63,12 @@ html {
         font-weight: 300;
 
         span {
-          color: $secondary-color;
           position: relative;
 
           &::after {
             content: "";
             width: 8px;
             height: 100%;
-            background: $secondary-color;
             display: block;
             position: absolute;
             right: -10px;
@@ -96,6 +94,30 @@ html {
         &::after {
           visibility: visible;
           right: 0;
+        }
+      }
+    }
+
+    .Projects {
+      background-color: $base-color;
+    }
+
+    .Skills {
+      .skill-icons {
+        .skill-container {
+          padding: 12px;
+          background-color: rgba(224,224,224,0.05);
+          border-radius: 10px;
+          width: 150px;
+
+          @media screen and (max-width: 767px) {
+            width: 100px;
+          }
+        }
+
+        .skill-icon {
+          font-size: 3.6em;
+          margin-bottom: 10px;
         }
       }
     }

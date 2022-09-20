@@ -3,12 +3,12 @@ import { Icon } from "@iconify/react";
 const About = () => {
   return (
     <div className='About py-5 container' id='about'>
-      <h2 className='text-center mb-5 text-uppercase'>About me</h2>
-      <div className='row justify-content-center'>
+      <h2 className='text-center my-5 text-uppercase'>About me</h2>
+      <div className='row justify-content-center mb-5'>
         <div className=' col-xl-3 col-lg-4 mb-3'>
           <img src='images/headshot.jpg' alt='Jake Burton' className='rounded' />
         </div>
-        <div className="col-xl-9 col-lg-8 mb-3">
+        <div className="col-xl-9 col-lg-8">
           <div className="card">
             <div className="card-header">
               <Icon icon='emojione:red-circle' width='10' className='me-2' />

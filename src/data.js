@@ -39,24 +39,24 @@ export const skillsData = [
     icon: 'akar-icons:sass-fill'
   },
   {
-    skill: 'Python',
-    icon: 'fa-brands:python'
-  },
-  {
     skill: 'MongoDB',
     icon: 'bxl:mongodb'
   },
   {
     skill: 'WordPress',
     icon: 'brandico:wordpress'
+  },
+  {
+    skill: 'Python',
+    icon: 'fa-brands:python'
   }
 ];
 
 export const projectsData = [
   {
     title: 'Drag and Drop Ranker',
-    image: '',
-    info: "",
+    image: 'images/dnd-ranker.png',
+    info: "I built this app as I have an obsession with ranking things, from food, video games, and movies. I have always found traditional lists hard to keep up with and update. This app lets you seemlessly rank and save lists.",
     techStack: [
       {
         icon: 'akar-icons:react-fill',
@@ -75,13 +75,13 @@ export const projectsData = [
         tech: 'SASS'
       }
     ],
-    link: '',
-    githubLink: ''
+    link: 'https://drag-and-drop.jakeburton.dev',
+    githubLink: 'https://github.com/jburto94/drag-and-drop-ranker-client'
   },
   {
     title: 'IMDB Watchlist Movie Picker',
-    image: '',
-    info: "For people who have a list of movies or tv shows that they plan on watching, but are too indecisive on what to choose. When the user's IMDB watchlist page loads, a link in the right sidebar will appear. When clicked the link will display a single item on the user's watchlist. For some longer lists, the extension will autoload them. If the connection is slow or the user's list is extrememly long, they may need to scroll through the list and as the images and text are lazy loaded.",
+    image: 'images/imdb-watchlist.png',
+    info: "For people who have a list of movies or tv shows that they plan on watching, but are too indecisive on what to choose. When the user's IMDB watchlist page loads, a link in the right sidebar will appear. When clicked the link will display a single item on the user's watchlist.",
     techStack: [
       {
         icon: 'akar-icons:javascript-fill',
@@ -93,7 +93,7 @@ export const projectsData = [
   },
   {
     title: 'MyRecipeApp',
-    image: '',
+    image: 'images/recipe-app.png',
     info: "I very much enjoy cooking and am always looking for new recipes. This app allows me to find new recipes and keep track of all of them in one place. I have given other's access to the app to create profiles and save recipes if they would like to. If you are on the look out for new recipes, then give it a try.",
     techStack: [
       {
@@ -117,25 +117,8 @@ export const projectsData = [
     githubLink: 'https://github.com/jburto94/my-recipe-app'
   },
   {
-    title: 'Schedule Tweets',
-    image: '',
-    info: "",
-    techStack: [
-      {
-        icon: 'mdi:language-ruby-on-rails',
-        tech: 'Rails'
-      },
-      {
-        icon: 'akar-icons:postgresql-fill',
-        tech: 'PostgeSQL'
-      }
-    ],
-    link: '',
-    githubLink: 'https://github.com/jburto94/schedule_posts'
-  },
-  {
     title: 'Appalachian Apparal',
-    image: '',
+    image: 'images/app-apparel.png',
     info: "An eCommerece clothing store. The frontend was built using React and the backend is handled through Firebase. No payments can go through as the app is using a test stripe account, but the payment authentication still works.",
     techStack: [
       {
@@ -153,6 +136,23 @@ export const projectsData = [
     ],
     link: 'https://zippy-pastelito-42acee.netlify.app/',
     githubLink: 'https://github.com/jburto94/appalachian-apparel'
+  },
+  {
+    title: 'Schedule Tweets',
+    image: 'images/schedule-post.png',
+    info: "Whether you will be out of town, have no internet, or just want to have a fall back, this app is perfect for any Twitter user. Authenticate you account with twitter and you will be able to schedule any future tweets that you desire. The app also lets you decide if you would like to delete or update a scheduled post.",
+    techStack: [
+      {
+        icon: 'mdi:language-ruby-on-rails',
+        tech: 'Rails'
+      },
+      {
+        icon: 'akar-icons:postgresql-fill',
+        tech: 'PostgeSQL'
+      }
+    ],
+    link: 'https://schedule-posts.herokuapp.com',
+    githubLink: 'https://github.com/jburto94/schedule_posts'
   }
 ];
 
@@ -170,8 +170,7 @@ export const experienceData = [
       'Bootstrap',
       'Python',
       'Wordpress',
-      'PHP',
-      'Python'
+      'PHP'
     ]
   },
   {

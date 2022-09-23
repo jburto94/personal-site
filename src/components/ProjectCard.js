@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div>
-      <div className='ProjectCard bg-white p-2 text-center' onClick={handleProjectOpen}>
+      <div className='ProjectCard p-2 text-center' onClick={handleProjectOpen}>
         <img src={image} alt={title} />
         <p className='my-3'>{title}</p>
       </div>

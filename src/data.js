@@ -158,7 +158,20 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    date: 'January 2019 - present',
+    date: 'December 2022 - present',
+    title: 'Software Engineer',
+    company: 'Selfbook',
+    techStack: [
+      'JavaScript',
+      'React',
+      'NextJS',
+      'HTML5',
+      'CSS3',
+      'jQuery',
+      'Rails'
+    ]
+  }, {
+    date: 'January 2019 - November 2022',
     title: 'Lead Web Developer',
     company: 'Drastic Impact',
     techStack: [

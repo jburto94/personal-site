@@ -172,7 +172,7 @@ export const experienceData = [
     ]
   }, {
     date: 'January 2019 - November 2022',
-    title: 'Lead Web Developer',
+    title: 'Front-End Developer',
     company: 'Drastic Impact',
     techStack: [
       'HTML5',
